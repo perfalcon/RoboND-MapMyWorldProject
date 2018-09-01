@@ -1,0 +1,39 @@
+Loaded plugin tf.tfwtf
+No package or stack in context
+================================================================================
+Static checks summary:
+
+No errors or warnings
+================================================================================
+Beginning tests of your ROS graph. These may take awhile...
+analyzing graph...
+... done analyzing graph
+running graph rules...
+... done running graph rules
+running tf checks, this will take a second...
+... tf checks complete
+
+Online checks summary:
+
+Found 2 warning(s).
+Warnings are things that may be just fine, but are sometimes at fault
+
+[1mWARNING[0m The following node subscriptions are unconnected:
+ * /gazebo:
+   * /gazebo/set_model_state
+   * /gazebo/set_link_state
+   * /cmd_vel
+ * /rviz:
+   * /move_base/TrajectoryPlannerROS/global_plan
+   * /ekfpath
+   * /odompath
+   * /move_base/current_goal
+   * /move_base/TrajectoryPlannerROS/local_plan
+   * /map
+   * /map_updates
+   * /particlecloud
+
+[1mWARNING[0m These nodes have died:
+ * urdf_spawner-6
+
+
