@@ -168,11 +168,18 @@
 <box size="0.05 0.05 0.05"/>
 </geometry>
 </collision>
+<!--
 <visual>
 <origin xyz="0.2 0 0" rpy="0 0 0"/>
 <geometry>
 <box size="0.05 0.05 0.05"/>
 </geometry>
+</visual>
+-->
+<visual name="visual">
+        <geometry>
+         <mesh filename="package://slam_project/meshes/kinect.dae"/>
+        </geometry>
 </visual>
 <inertial>
      <mass value="0.1"/>
@@ -184,6 +191,12 @@
 <child link="camera_link"/>
 <parent link="chassis"/>
 </joint>
+<joint type="fixed" name="rgb_camera_joint">
+<orign xyz="0.2 0 0" rpy="0 0 0"/>
+<parent link="camera_link"/>
+<child link="camera_rgbd_frame"/>
+</joint>
+<link name="camera_rgbd_frame"/>
 
 
 <link name="hokuyo">
