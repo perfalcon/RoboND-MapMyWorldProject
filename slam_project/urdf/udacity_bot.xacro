@@ -192,7 +192,7 @@
 <parent link="chassis"/>
 </joint>
 <joint type="fixed" name="rgb_camera_joint">
-<orign xyz="0.2 0 0" rpy="0 0 0"/>
+<orign xyz="0 0 0" rpy="${-pi/2} 0 ${-pi/2}"/>
 <parent link="camera_link"/>
 <child link="camera_rgbd_frame"/>
 </joint>
