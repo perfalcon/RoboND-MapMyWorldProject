@@ -1,0 +1,1 @@
+roslaunch slam_project mapping.launch

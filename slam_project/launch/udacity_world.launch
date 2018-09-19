@@ -29,6 +29,7 @@ output="screen" args="-urdf -param robot_description -model slam_project"/>
 
 <!--launch rviz-->
 <!-- <node name="rviz" pkg="rviz" type="rviz" respawn="false"/> -->
-<node pkg="rviz" type="rviz" name="rviz" respawn="false" args="-d $(find slam_project)/whereami-Rvizconfig.rviz"/>
+<!-- <node pkg="rviz" type="rviz" name="rviz" respawn="false" args="-d $(find slam_project)/whereami-Rvizconfig.rviz"/> -->
+<node pkg="rviz" type="rviz" name="rviz" respawn="false" args="-d $(find slam_project)/robot_slam.rviz"/> 
 
 </launch>
