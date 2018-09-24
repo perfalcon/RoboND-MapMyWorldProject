@@ -20,7 +20,7 @@
     <arg name="debug" value="$(arg debug)"/>
   </include>
 
-<!-- <include file="$(find slam_project)/launch/mapping.launch"/> -->
+<!-- <include file="$(find slam_project)/launch/mapping.launch"/>  -->
 
 <!--spawn a robot in gazebo world-->
 
