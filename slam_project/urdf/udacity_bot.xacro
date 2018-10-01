@@ -160,7 +160,7 @@
   </joint>
 
 
-<link name ="camera_link">
+<link name ="camera">
 <origin xyz="0 0 0" rpy="0 0 0"/>
 <collision>
 <origin xyz="0.2 0 0" rpy="0 0 0"/>
@@ -186,17 +186,21 @@
      <inertia ixx="1e-6"  ixy="0"  ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
  </inertial>
 </link>
+
 <joint type="fixed" name="camera_joint">
 <orign xyz="0.2 0 0" rpy="0 0 0"/>
-<child link="camera_link"/>
+<child link="camera"/>
 <parent link="chassis"/>
 </joint>
-<joint type="fixed" name="rgb_camera_joint">
+
+<joint type="fixed" name="camera_optical_joint">
 <orign xyz="0 0 0" rpy="${-pi/2} 0 ${-pi/2}"/>
-<parent link="camera_link"/>
-<child link="camera_rgbd_frame"/>
+<parent link="camera"/>
+<child link="camera_link_optical"/>
 </joint>
-<link name="camera_rgbd_frame"/>
+
+<!-- <link name="camera_rgbd_frame"/> -->
+<link name="camera_link_optical"/>
 
 
 <link name="hokuyo">
